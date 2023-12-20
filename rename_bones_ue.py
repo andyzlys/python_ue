@@ -64,6 +64,6 @@ def rename_bones_in_selected_skeleton(excel_file_path='', source=''):
 
 if __name__ == '__main__':
     # 先在内容浏览器中选中需要修改的.uasset文件
-    excel_file_path = r'/Users/apple/Downloads/ik_bones_rename.xlsx'
+    excel_file_path = r'./ik_bones_rename.xlsx'
     source = 'mixamo_xiaobairen'
     rename_bones_in_selected_skeleton(excel_file_path=excel_file_path, source=source)
