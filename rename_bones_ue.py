@@ -28,7 +28,7 @@ def rename_bones_in_selected_skeleton(excel_file_path='', source=''):
     if not source:
         raise ValueError("No source column name provided.")
     # Generate the rename dictionary from the Excel file
-    rename_dict = excel_to_dictionaries(excel_file_path)[source]
+    rename_dict = excel_to_dicts(excel_file_path)[source]
 
     # Get the selected assets in the content browser
     selected_assets = unreal.EditorUtilityLibrary.get_selected_assets()
