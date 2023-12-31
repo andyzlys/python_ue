@@ -1,6 +1,6 @@
 import unreal
 
-ik_controller = unreal.IKRigController.get_controller()
+ik_controller = unreal.IKRigController().get_controller()
 
 # 定义资产的名称和保存路径
 asset_name = "MyIKRigDefinition"
