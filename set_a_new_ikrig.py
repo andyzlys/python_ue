@@ -46,6 +46,7 @@ else:
 
         ik_rig_definition.set_editor_property('draw_goals', True)
         ik_rig_controller = unreal.IKRigController.get_controller(ik_rig_definition)
+        ik_rig_controller.set_skeletal_mesh(asset_to_check, transact=False)
         ik_rig_controller.add_retarget_chain('spine', 'spine_01', 'spine_02', 'None')
 
 
